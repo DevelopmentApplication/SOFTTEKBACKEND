@@ -7,6 +7,18 @@ export async function main(options: ApplicationConfig = {}) {
   await app.boot();
   await app.start();
 
+  // const io = require('socket.io')(await app.start());
+
+  // io.on('connection', async function (socket: any) {
+  //   console.log('connected', socket.id);
+
+  //   socket.emit('test event', 'here is some DATA');
+
+  //   socket.on('disconnect', function () {
+  //     console.log('user disconnected');
+  //   });
+  // });
+
   const url = app.restServer.url;
   console.log(`Server is running at ${url}`);
   console.log(`Try ${url}/ping`);
@@ -14,7 +26,10 @@ export async function main(options: ApplicationConfig = {}) {
   return app;
 }
 
+
+
 if (require.main === module) {
+
   // Run the application
   const config = {
     rest: {
