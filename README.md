@@ -1,75 +1,29 @@
-# softtekbackend
 
-This application is generated using [LoopBack 4 CLI](https://loopback.io/doc/en/lb4/Command-line-interface.html) with the
-[initial project layout](https://loopback.io/doc/en/lb4/Loopback-application-layout.html).
+Este proyecto fue generado usando [LoopBack 4 CLI](https://loopback.io/doc/en/lb4/Command-line-interface.html)
 
-## Install dependencies
+## Instrucciones para ejecutar aplicación en un ambiente local
 
-By default, dependencies were installed when this application was generated.
-Whenever dependencies in `package.json` are changed, run the following command:
+# Instalar dependencias globales
 
-```sh
-npm install
-```
+De no tener instalado [node.js] se deberá descargar de (https://nodejs.org/es/download/)
+instalar framework mediante linea de comando con `$ npm install -g @loopback/cli`
 
-To only install resolved dependencies in `package-lock.json`:
+# Instalar dependecias proyecto
 
-```sh
-npm ci
-```
+una vez descargado del repositorio, se deberán descargar las dependecias.
+Abrir terminal integrado de VS Code [Ctrl+Shift+ñ]
+Ejecutar comando `npm install`
 
-## Run the application
+# Servidor redis
 
-```sh
-npm start
-```
+La aplicación ejecuta redis en un entorno local, por lo tanto se debe instalar localmente desde
+(https://redis.io/download)
 
-You can also run `node .` to skip the build step.
+Seguir las intrucciones del sitio para ejecutar redis-server.exe
 
-Open http://127.0.0.1:3000 in your browser.
+# Arrancar aplicación
 
-## Rebuild the project
+Arrancar la aplicación `npm start`
+Abrir http://127.0.0.1:3000 en el navegador
 
-To incrementally build the project:
 
-```sh
-npm run build
-```
-
-To force a full build by cleaning up cached artifacts:
-
-```sh
-npm run rebuild
-```
-
-## Fix code style and formatting issues
-
-```sh
-npm run lint
-```
-
-To automatically fix such issues:
-
-```sh
-npm run lint:fix
-```
-
-## Other useful commands
-
-- `npm run migrate`: Migrate database schemas for models
-- `npm run openapi-spec`: Generate OpenAPI spec into a file
-- `npm run docker:build`: Build a Docker image for this application
-- `npm run docker:run`: Run this application inside a Docker container
-
-## Tests
-
-```sh
-npm test
-```
-
-## What's next
-
-Please check out [LoopBack 4 documentation](https://loopback.io/doc/en/lb4/) to
-understand how you can continue to add features to this application.
-
-[![LoopBack](https://github.com/strongloop/loopback-next/raw/master/docs/site/imgs/branding/Powered-by-LoopBack-Badge-(blue)-@2x.png)](http://loopback.io/)
