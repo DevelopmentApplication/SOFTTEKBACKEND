@@ -22,6 +22,15 @@ const config = {
         getCity: ['city_name'],
       },
     },
+    {
+      template: {
+        method: 'GET',
+        url: 'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=e534c5f0903d5295b50f63a16ff69019'
+      },
+      functions: {
+        getCityLatLon: ['lat', 'lon'],
+      },
+    }
   ],
 };
 

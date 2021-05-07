@@ -55,8 +55,10 @@
     "@loopback/rest": "^9.3.0",
     "@loopback/rest-explorer": "^3.3.0",
     "@loopback/service-proxy": "^3.2.0",
+    "@types/redis": "^2.8.28",
     "loopback-connector-openapi": "^6.2.0",
     "loopback-connector-rest": "^3.7.0",
+    "redis": "^3.1.2",
     "tslib": "^2.0.0"
   },
   "devDependencies": {
